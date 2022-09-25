@@ -82,9 +82,9 @@ class stack{
     return  s.isempty();
     }
 int main() {
-    string Parentheses
-    Parentheses
-    if(isValidParentheses
+    string Parentheses;
+    cin>>Parentheses;
+    if(isValid(Parentheses))
     {
         cout<<"Parentheses in the string are balanced";
     }
