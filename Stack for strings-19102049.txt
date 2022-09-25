@@ -1,7 +1,6 @@
-//stack class
 class stack{
     public:
-    char arr[1000];
+    string arr[1000];
     int top;
     stack()
     {
@@ -15,7 +14,7 @@ class stack{
         }
         else return false;
     }
-    bool push(char x)
+    bool push(string x)
     {
         if(top>=1000)
         {
@@ -26,25 +25,25 @@ class stack{
         arr[top]=x;
         return true;
     }
-    char pop()
+    string pop()
     {
         if(top==-1)
         {
             cout<<"stack is empty"<<endl;
             return 0;
         }
-        char temp=arr[top];
+        string temp=arr[top];
         top--;
         return temp;
     }
-    char peek()
+    string peek()
     {
          if(top==-1)
         {
             cout<<"stack is empty"<<endl;
-            return 0;
+            return "";
         }
-        char temp=arr[top];
+        string temp=arr[top];
         return temp;
     }
 };
